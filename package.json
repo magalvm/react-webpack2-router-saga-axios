@@ -1,0 +1,32 @@
+{
+  "name": "ReactBoilerpalte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node webpack/webpack-dev-server",
+    "build": "rm -Rf build/* | NODE_ENV=production webpack --config webpack/webpack.config.js --progress --env.prod"
+  },
+  "dependencies": {
+    "react": "15.5.0",
+    "react-dom": "15.5.0",
+    "react-router": "v3.0.0",
+    "axios": "^0.15.3",
+    "immutable": "^3.8.1",
+    "redux": "^3.6.0",
+    "react-redux": "^5.0.2",
+    "redux-immutable": "^3.1.0",
+    "redux-saga": "^0.14.3",
+    "material-ui": "^0.17.4",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "v2.2.0"
+  }
+}
